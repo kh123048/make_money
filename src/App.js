@@ -93,7 +93,7 @@ function App() {
     window.location.replace("/");
   }
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/">
           <Main />
